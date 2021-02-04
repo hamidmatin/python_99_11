@@ -60,3 +60,8 @@ NAME = 'Arman'
 print(name)
 print(Name)
 print(NAME)
+
+message = "Ali's book"
+print(message)
+
+message = 'Ali said "dhfjdfkgdak"'
