@@ -55,10 +55,13 @@ print(student_full_name)
 
 print('Rad' * 5)
 
-# 2. Assignment Operators
+################ 2. Assignment Operators
 # variable = literal or expression#
 # = Assignment
 # += Addition Assignment
+
+
+print('Assignment Operators')
 a = 10
 b = 20
 c = a + b
@@ -76,3 +79,54 @@ c **= 5         # c = c ** 5
 c += 1          # c = c + 1 => c++ doesn’t support
 c -= 1          # c = c - 1 => c-- doesn’t support
 
+################ 3. Comparison Operators
+# value comparision value  => bool => True or False
+
+print('Comparison Operators')
+
+x = 20
+y = 20
+
+print(x == y)
+print(x != y)
+
+x = 15
+print(x == y)
+print(x != y)
+print(x > y)
+y = 15
+print(x < y)
+print(x >= y)
+print(x <= y)
+
+print('"Aston" > "Asher"', "Aston" > "Asher", sep=" = ")
+print('"Aston" > "aston" = ', "Aston" > "aston")
+
+# Logical Operators
+# bool logical bool => bool
+# and   or   not
+
+print('Logical Operators')
+
+print('True and True = ', True and True)
+print('True and False = ', True and False)
+print('False and True = ', False and True)
+print('False and False = ', False and False)
+
+print('-------')
+print('True or True = ', True or True)
+print('True or False = ', True or False)
+print('False or True = ', False or True)
+print('False or False = ', False or False)
+
+print('-------')
+print('not True = ', not True)
+print('not False = ', not False)
+
+############ Bitwise Operators
+
+print('Bitwise Operators') 
+
+print(65 & 98)
+print(65 | 98)
+print(5 * -x)
