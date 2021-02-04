@@ -45,3 +45,34 @@ print(result)
 
 result = ((x + 6) * (3 - y)) ** 2
 print(result)
+
+# Start Session 2
+student_first_name = 'Mohammad'
+student_last_name = 'Azimi'
+student_full_name = student_first_name + ' ' + student_last_name
+
+print(student_full_name)
+
+print('Rad' * 5)
+
+# 2. Assignment Operators
+# variable = literal or expression#
+# = Assignment
+# += Addition Assignment
+a = 10
+b = 20
+c = a + b
+
+c = c + 5
+print(c)
+
+c += 5          # c = c + 5
+c -= 5          # c = c - 5
+c *= 5          # c = c * 5
+c /= 5          # c = c / 5
+c //= 5         # c = c // 5
+c %= 5          # c = c % 5
+c **= 5         # c = c ** 5
+c += 1          # c = c + 1 => c++ doesn’t support
+c -= 1          # c = c - 1 => c-- doesn’t support
+
