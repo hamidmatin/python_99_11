@@ -1,4 +1,5 @@
 import inner_function_module
+import recursive_function
 
 my_global = 10
 
@@ -23,6 +24,13 @@ def main():
   print(f'My global after call f2 is : {my_global}')
 
   inner_function_module.outer_function()
+
+  n = int(input('Enter a number : '))
+  fac = recursive_function.factorial(n)
+  print(f'{n}! = {fac}')
+
+  fac = recursive_function.factorial_rec(n)
+  print(f'{n}! = {fac}')
 
 if(__name__ == "__main__"):
   main()
