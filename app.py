@@ -1,7 +1,7 @@
 import inner_function_module
 import recursive_function
+import default_parameter
 
-my_global = 10
 
 def function_defination_with_no_argument():
   print("This is a function definition with NO Argument")
@@ -25,12 +25,24 @@ def main():
 
   inner_function_module.outer_function()
 
-  n = int(input('Enter a number : '))
+  # n = int(input('Enter a number : '))
+  n = 2
   fac = recursive_function.factorial(n)
   print(f'{n}! = {fac}')
 
   fac = recursive_function.factorial_rec(n)
   print(f'{n}! = {fac}')
 
+  #####################
+  default_parameter.work_area("Alice has interest in", "Internet of Things")
+  default_parameter.work_area("Sam works in")
+  default_parameter.work_area_2("Sam works in")
+  default_parameter.work_area_2("Sam works in", "LA")
+  default_parameter.work_area_2("Sam works in", city="LA")
+  default_parameter.work_area_2(prompt="Sam works in", domain="Internet of Things", city="LA")
+  default_parameter.work_area_2(city="LA", prompt="Sam works in", domain="Internet of Things")
+
+  print('1',end='')
+  print('2')
 if(__name__ == "__main__"):
   main()
