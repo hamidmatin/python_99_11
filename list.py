@@ -85,14 +85,14 @@ def ref_type_vs_value_type():
 
     nomreh_list = [80, 60, 95, 100]
 
-    s = sum(nomreh_list.copy())
+    s = sum_list(nomreh_list.copy())
     print(f'nomarat = {nomreh_list}, sum = {s}')
 
-    # s = sum(nomreh_list)
+    # s = sum_list(nomreh_list)
     # print(f'nomarat = {nomreh_list}, sum = {s}')
 
     copy_of_nomarat = nomreh_list.copy()
-    s = sum(copy_of_nomarat)
+    s = sum_list(copy_of_nomarat)
     print(
         f'nomarat = {nomreh_list}, sum = {s}, copy of nomarat = {copy_of_nomarat}'
     )
@@ -108,7 +108,7 @@ def ref_type_vs_value_type():
     )
 
 
-def sum(list):
+def sum_list(list):
     sum = 0
     counter = 0
     for number in list:
@@ -145,3 +145,58 @@ def slicing():
     print(list[::-1])
     print(list[-6:-2])
     print(list[-6:-9:-1])
+
+def list_functions():
+    numbers = [1, 2, 3, 4, 5]
+    print(f'len = {len(numbers)}')
+    print(f'sum = {sum(numbers)}')
+    print(f'min = {min(numbers)}')
+    print(f'max = {max(numbers)}')
+    print(any([0, 0, 1, 0, 0, 0]))
+    print(all([1, 1, 1, 1, 1, 1]))
+
+    lakes = ['superior', 'erie', 'huron', 'ontario', 'powell']
+    lakes_sorted = sorted(lakes)
+
+    print(f'lakes = {lakes}')
+    print(f'sorted lakes = {lakes_sorted}')
+
+def list_methods():
+    cities = ["oslo", "delhi", "washington", "london", "seattle", "paris", "washington"]
+    print(f'Count of seattle = {cities.count("seattle")}')
+    print(f'Count of washington = {cities.count("washington")}')
+    print(f'Count of tehran = {cities.count("tehran")}')
+    print(f'index of london in list = {cities.index("london")}')
+
+    cities.reverse();
+    print(f'Cities = {cities}')
+
+    cities.sort()
+    print(f'Cities = {cities}')
+
+    cities.append('brussels')
+    print(f'Cities = {cities}')
+
+    cities.append('tehran')
+    print(f'Cities = {cities}')
+
+    cities.insert(4, 'tabriz')
+    print(f'Cities = {cities}')
+
+    cities.remove('oslo')
+    print(f'Cities = {cities}')
+
+    cities.extend(['a', 'b', 'c'])
+    print(f'Cities = {cities}')
+
+    print(cities.pop())
+    print(f'Cities = {cities}')
+
+    print(cities.pop())
+    print(f'Cities = {cities}')
+
+    print(cities.pop(2))
+    print(f'Cities = {cities}')
+
+    print(cities.pop(-2))
+    print(f'Cities = {cities}')
