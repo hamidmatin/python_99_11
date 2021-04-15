@@ -7,6 +7,8 @@ def main():
   # list.slicing()
   # list.list_functions()
   list.list_methods()
+
+  # Start Session 07
   
 if(__name__ == "__main__"):
   main()
