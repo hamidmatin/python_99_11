@@ -1,4 +1,3 @@
-import list
 
 def main():
   # list.list_intro()
@@ -9,6 +8,7 @@ def main():
   list.list_methods()
 
   # Start Session 07
+  print('Session 7')
   
 if(__name__ == "__main__"):
   main()
