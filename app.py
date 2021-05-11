@@ -35,7 +35,7 @@ def main():
   silva_book.book_info();
   
   ########## Multiple Inheritance ##########
-  print(f"Is Cook a derived class of Poissonier Base Class? {issubclass(classess_inheritance.Cook,(classess_inheritance.Entremetier, classess_inheritance.Poissonier))}")
+  print(f"Is Cook a derived class of Poissonier Base Class? {issubclass(Cook,(Entremetier, Poissonier))}")
 
   chef = Cook("SeaFood", "Vegetables")
   chef.invoke_base_class_methods()
