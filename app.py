@@ -1,7 +1,18 @@
-import classess_inheritance
-import classes_poly
-import classes_oveloading
+# Relative Address
 
+# import all classes or fanctions from a module in current folder
+from .classess_inheritance import *  
+# import one classe or fanction from a module in current folder
+from .classess_inheritance import Fiction
+# import a module from current folder
+from . import classes_poly          
+from . import classes_oveloading
+# import one classe or fanction from a module in package1 / module1
+from .package1.module1 import my_function1
+
+# Absolute Address
+# import one classe or fanction from a module in package2 / module2
+from package1.module2 import my_function2
 def shape_type(shape_obj):
   shape_obj.area()
   shape_obj.perimeter()
@@ -11,13 +22,13 @@ def main():
   # Start Session 09
   print('Session 9')
   
-  c1 = classess_inheritance.BackendCourse('Python', 40)
+  c1 = BackendCourse('Python', 40)
   c1.show_info()
 
-  t1 = classess_inheritance.Teacher('Hamid Reza', 'Izadi matin', c1)
+  t1 = Teacher('Hamid Reza', 'Izadi matin', c1)
   t1.show_info()
 
-  silva_book = classess_inheritance.Fiction("Daniel Silva", "Prince of Fire", "Berkley")
+  silva_book = Fiction("Daniel Silva", "Prince of Fire", "Berkley")
   silva_book.invoke_base_class_method()
   silva_book.invoke_self_method()
 
@@ -26,7 +37,7 @@ def main():
   ########## Multiple Inheritance ##########
   print(f"Is Cook a derived class of Poissonier Base Class? {issubclass(classess_inheritance.Cook,(classess_inheritance.Entremetier, classess_inheritance.Poissonier))}")
 
-  chef = classess_inheritance.Cook("SeaFood", "Vegetables")
+  chef = Cook("SeaFood", "Vegetables")
   chef.invoke_base_class_methods()
   chef.display_chef_info()
 
